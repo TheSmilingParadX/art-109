@@ -1,0 +1,57 @@
+/*
+COLOR PALETTE
+
+Oxford Blue     #000d37
+Delft Blue      #2c357a
+Royal Blue      #6776dd
+Purpureus       #a935bd
+Keppel          #34ae9f
+*/
+
+/* GLOBAL STYLES
+--------------------------------------------------*/
+body {
+    background: #000d37;
+    color: #6776dd;
+}
+
+/* links */
+a {
+    color: #34ae9f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* HOME
+--------------------------------------------------*/
+.home {
+    background: #000d37;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
+}
+
+/* RESUME
+--------------------------------------------------*/
+
+/* Profile
+-------------------------*/
+
+/* Projects
+-------------------------*/
+
+/* Work Experience
+-------------------------*/
+
+/* Education
+-------------------------*/
+
+/* FOOTER
+--------------------------------------------------*/
+footer {
+    background: #2c357a;
+}
