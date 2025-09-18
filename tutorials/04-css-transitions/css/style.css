@@ -1,0 +1,37 @@
+.title {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.square {
+    background-color: #6776dd;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: goldenrod;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: #a935bd;
+    background-color: #34ae9f;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 1s;
+    display: inline-block;
+}
+
+.button:hover {
+    color: #34ae9f;
+    background-color: #a935bd;
+    transform: scale(1.5);
+}
