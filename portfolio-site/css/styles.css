@@ -1,48 +1,110 @@
 /*
 COLOR PALETTE
 
-Oxford Blue     #000d37
-Delft Blue      #2c357a
-Royal Blue      #6776dd
-Purpureus       #a935bd
-Keppel          #34ae9f
+Lapis Lazuli    #05668d "primary & background"
+Teal            #028090 "extras"
+Persian Green   #00a896 "text"
+Mint            #02c39a "links"
+Cream           #f0f3bd "footer"
 */
 
 /* GLOBAL STYLES
 --------------------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
 body {
-    background: #000d37;
-    color: #6776dd;
+    height: 100%;
+}
+
+body {
+    background: #05668d;
+    color: #00a896;
+    margin: 0;
 }
 
 /* links */
 a {
-    color: #34ae9f;
+    color: #02c39a;
 }
 
 a:hover {
     text-decoration: none;
 }
 
+.btn {
+    background: #028090;
+    color: #02c39a;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
 /* HOME
 --------------------------------------------------*/
 .home {
-    background: #000d37;
+    background: url(../images/peaceful-pixel-lake-stockcake.jpg) no-repeat;
     background-size: cover;
 }
 
 .home .content-wrapper {
-    background: rgb(255 255 255 / 0.9);
+    background: rgb(240 243 189 / 1);
 }
 
 /* RESUME
 --------------------------------------------------*/
+.resume header::before {
+    background: url(../images/peaceful-pixel-lake-stockcake.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2.5px dashed #028090;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
 
 /* Profile
 -------------------------*/
 
 /* Projects
 -------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 
 /* Work Experience
 -------------------------*/
@@ -53,5 +115,18 @@ a:hover {
 /* FOOTER
 --------------------------------------------------*/
 footer {
-    background: #2c357a;
+    background: #f0f3bd;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
 }
